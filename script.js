@@ -106,3 +106,9 @@ currentLocationBtn.addEventListener("click", () => {
 searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
 });
+searchBox.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") {
+        checkWeather(searchBox.value);
+    }
+});
+
